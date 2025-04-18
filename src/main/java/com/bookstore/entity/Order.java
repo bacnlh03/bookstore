@@ -29,8 +29,9 @@ public class Order {
 
     public Order() {}
 
-    public Order(PaymentMethod paymentMethod) {
+    public Order(PaymentMethod paymentMethod, Customer customer) {
         this.paymentMethod = paymentMethod;
+        this.customer = customer;
     }
 
     @PrePersist

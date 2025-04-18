@@ -8,10 +8,6 @@ import com.bookstore.enums.BookType;
 
 public class BookFactory {
     public static Book createBook(BookType type, String title, String author, double price, int stock) {
-        if (type == null) {
-            throw new IllegalArgumentException("Book type cannot be null");
-        }
-
         Book book;
 
         switch (type) {
