@@ -94,4 +94,8 @@ public class Order {
         }
         return sb.toString();
     }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
 }

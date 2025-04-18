@@ -52,4 +52,21 @@ public abstract class User {
     public void logout() {
         System.out.println("User " + name + " logged out successfully.");
     }
+
+    public void updateInfo(User updatedUser) {
+        if (updatedUser.name != null && !updatedUser.name.isBlank()) {
+            this.name = updatedUser.name;
+        }
+
+        if (updatedUser.email != null && !updatedUser.email.isBlank()) {
+            this.email = updatedUser.email;
+        }
+
+        if (updatedUser.password != null && !updatedUser.password.isBlank()) {
+            this.password = updatedUser.password;
+        }
+
+        System.out.println("User info updated successfully for: " + this.name);
+    }
+
 }
